@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><title>1.float</title>
+<meta charset="utf-8">
+<style type="text/css">
+    /* 초기설정 */
+    *{margin:0;padding:0;}
+    li{list-style-type:none;}
+    a{text-decoration: none;color:#fff;}
+    body{
+        background:#6f866c;
+        background-image: url("./images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; /* 백그라운드의 사이즈 지정 */
+        background-attachment: fixed;
+    }
+
+    .center{width:1000px; margin:0 auto;}
+
+    header{
+      background: rgba(148, 145, 145, 0.8);
+      background-image: url("./images/Topimg.jpg");
+      background-repeat: no-repeat;
+    }
+
+    header h1{text-align: right;padding:30px 0;}
+
+    /* 본문 */
+    section{
+      background:rgba(255, 255, 255, 0.6); overflow: hidden;
+    }
+
+    nav{
+      float: left;width:200px;
+    background-color: rgb(0, 0, 0);
+    }
+    nav li a{display:block; border-bottom:2px solid #fff; padding:20px;}
+    nav li a:hover{background: #dd1e1e;}
+
+    article{float: left;width:800px;}
+    article .wrap{padding:20px;}
+
+    .row{overflow: hidden;}
+    .row > div{float: left;}
+    .row .left{width:65%;}
+    .row .right{width:35%;}
+    .row .photo{position: relative;}
+    .row .photo img{width:100%;}
+    .row .photo.left img{height: 356px;}
+    .row .photo dl{position: absolute; bottom:0px; padding:5px;}
+    .row .photo dl dt{color:#fff;}
+    .row .photo dl dd{color:rgb(201, 201, 201);}
+
+    .row .photo2{background: #97999b;padding: 20px 0;overflow: hidden;}
+    .row .photo2 li{float: left;width: 25%;text-align: center;}
+    .row .photo2 li img{}
+    .row .photo2 li p{}
+
+    .row .photo3{overflow: hidden;}
+    .row .photo3 li {float: left; width: 50%;}
+    .row .photo3 li img{float: left; padding-right: 10px;}
+    .row .photo3 li dl{font-size: 14px;}
+    .row .photo3 li dl dt{font-weight: bold;}
+    .row .photo3 li dl dd{}
+
+    /* 바닥글 */
+    footer{clear:left; background:rgba(145, 145, 145, 0.8);color:#ffffff;text-align: center;padding:30px 0;}
+</style>
+</head>
+
+<body>
+    <div class="center">
+        <header>
+            <h1 blass="logo"><img src="./images/logo.png"></h1>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">브랜드 이슈</a></li>
+                    <li><a href="#">프리뷰 모델</a></li>
+                    <li><a href="#">디테일 리뷰</a></li>
+                    <li><a href="#">프론티어 마켓</a></li>
+                    <li><a href="#">구매 가이드</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+
+            </nav>
+          <article>
+            <div class="row">
+              <div class="photo left">
+                <img src="images/maincontent_01.gif" alt="">
+                <dl>
+                  <dt>[시승기]</dt>
+                  <dd>THE PHEVest, 볼보 XC90 T8 엑설런스 & BMW i8</dd>
+                </dl>
+              </div>
+              <div class="right">
+                <div class="photo">
+                  <img src="images/right001.jpg" alt="">
+                  <dl>
+                    <dt>[시승기]</dt>
+                    <dd>THE PHEVest, 볼보 XC90 T8 엑설런스 & BMW i8</dd>
+                  </dl>
+                </div>
+                <div class="photo">
+                  <img src="images/right002.jpg" alt="">
+                  <dl>
+                    <dt>[시승기]</dt>
+                    <dd>THE PHEVest, 볼보 XC90 T8 엑설런스 & BMW i8</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- row end -->
+            <div class="row">
+              <ul class="photo2">
+                <li>
+                  <img src="./images/content_01.png">
+                  <p>SUV들의 거센 진격,<br>2017 광저우모터쇼</p>
+                </li>
+                <li>
+                  <img src="./images/content_02.png">
+                  <p>미국 출신의 마지막 <br>F1 챔피언은?</p>
+                </li>
+                <li>
+                  <img src="./images/content_03.png">
+                  <p>한여름 차안의 온도는 <br>얼마나 올라갈까?</p>
+                </li>
+                <li>
+                  <img src="./images/content_04.png">
+                  <p>수소연료 대형트럭 <br>‘니콜라 모터’ 주목</p>
+                </li>
+              </ul>
+            </div>
+            <!-- row end -->
+            <div class="row">
+              <ul class="photo3">
+                <li>
+                  <img src="./images/moving_content_01.png">
+                  <dl>
+                    <dt>좌측 동영상 콘텐츠 제목1</dt>
+                    <dd>아싸 새로운 자동차가 나와부러쓰야, 허벌나게 좋은거 시승기 한번 구경해봐라잉</dd>
+                  </dl>
+                </li>
+                <li>
+                  <img src="./images/moving_content_02.png">
+                  <dl>
+                    <dt>좌측 동영상 콘텐츠 제목2</dt>
+                    <dd>아싸 새로운 자동차가 나와부러쓰야, 허벌나게 좋은거 시승기 한번 구경해봐라잉</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="box1">
+              <div class="main1">[시승기]<br>
+              THE PHEVest, 볼보 XC90 T8 엑설런스 & BMW i8</div>
+            </div>
+            <div class="box2">
+              <div class="main2">[News]<br>
+              WRC-제 12전 영국밸리</div><br>
+              <div class="main3">[News]<br>
+              아우디 코리아, “더 뉴 아우디 R8 V10 플러스 쿠페” 출시
+              <br>
+              </div>
+              <ul class="box3">
+                <li class="round1"><img src="./images/content_01.png"><br>
+                SUV들의 거센 진격,<br>2017 광저우모터쇼</li>
+                <li class="round2"><img src="./images/content_02.png"><br>
+                미국 출신의 마지막 <br>F1 챔피언은?</li>
+                <li class="round3"><img src="./images/content_03.png"><br>
+                한여름 차안의 온도는 <br>얼마나 올라갈까?</li>
+                <li class="round4"><img src="./images/content_04.png"><br>
+                수소연료 대형트럭 <br>‘니콜라 모터’ 주목</li>
+              </ul>
+              <hr><hr>
+              <div class="box4">
+                <li class="movie1"><img src="./images/moving_content_01.png"></li>
+                <ul><strong>좌측 동영상 콘텐츠 제목1</strong></ul>
+                <ul>아싸 새로운 자동차가 나와부러쓰야, 허벌나게 좋은거 시승기 한번 구경해봐라잉</ul>
+              </div>
+              <div class="box5">
+                <li class="movie2"><img src="./images/moving_content_02.png"></li>
+                <ul><strong>좌측 동영상 콘텐츠 제목2</strong></ul>
+                <ul>아싸 새로운 자동차가 나와부러쓰야, 허벌나게 좋은거 시승기 한번 구경해봐라잉</ul>
+              </div>-->
+
+          </article>
+
+
+        </section>
+        <footer>
+            Copyright &copy; All rights reserved.
+        </footer>
+</body>
+</html>
